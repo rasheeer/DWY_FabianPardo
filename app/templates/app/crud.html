@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Listar clientes megaupload 1 link 100% real no feik</h1>
+    <ul>
+        {% for c in clientes %}
+        <li>
+            {{ c.nombre}}, {{ c.semestres}} ${{c.mensualidad}}
+            <a href="/editar_carrera/{{ c.id }}"> Editar</a>
+            <a href="/borrar_carrera/{{ c.id }}"
+            onclick="return confirm('¿Esta seguro de borrar?');"
+            > Borrar</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Listar Clientes</h1>
+    <ul>
+        {% for c in clientes %}
+        <li>
+            {{c.rut}}, {{ c.nombre}}, {{ c.apellido}}, {{c.edad}}, {{c.email}}, {{c.region}},
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

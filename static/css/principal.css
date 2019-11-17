@@ -1,0 +1,162 @@
+/* --------------- */
+/* ---- INDEX ---- */
+/* --------------- */
+.header{
+    background-color: white;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    margin: 0px;
+}
+#h5-superior-1, #h5-superior-2, #h5-superior-3, #h5-footer-1{
+    text-align: center;
+    color: grey;
+}
+#parrafo_card-1, #parrafo_card-2, #parrafo_card-3, #parrafo_footer-1{
+    text-align: center;
+    color: grey;
+    font-size: 13px;
+}
+#parrafo_footer-2{
+    text-align: left;
+    color: grey;
+    font-size: 13px;
+}
+
+
+#foto_carrusel_1, #foto_carrusel_2, #foto_carrusel_3{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#icono-telefono_atencion, #icono-telefono_telefono, #icono-telefono_whatsapp{
+    width: 40px;
+    height: 40px;
+}
+#imagen_logo{
+    width: 300px;
+    height: 100px;
+}
+.card-body > *{
+    color: rgb(130, 112, 109);
+    width: 100%;
+    height: 100%;
+}
+.card-text{
+    text-align: center;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover {
+    background-color: rgb(200, 126, 53);
+    color: white;
+}
+.navegacion > *{
+    background-color:orange;
+}
+.bd-example{
+    width: 100%;
+    height: 30%;
+}
+#espacio_blanco_vertical_logo1, #espacio_blanco_vertical_logo2, #espacio_blanco_vertical_logo3{
+    width: 30px;
+}
+.card-inferior{
+    display: flex;
+}
+.footer-inferior{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#icono_facebook, #icono_instagram, #icono_twitter{
+    width: 50px;
+    height: 50px;
+    border: 1px;
+}
+#parrafo_card1, #parrafo_card2, #parrafo_card3{
+    margin-left: 15%;
+}
+
+
+
+/* --------------- */
+/* --- ABOGADO --- */
+/* --------------- */
+.abogado1{
+    display: flex;
+}
+#parrafo-abogado_1, #parrafo-abogado_2{
+    width: 300px;
+    height: 311.5px;
+}
+
+#parrafo-abogado_alineado_derecha{
+    width: 300px;
+    height: 311.5px;
+    text-align: right;
+}
+#titulo-abogado_alineado_derecha{
+    text-align: right;
+}
+#foto_abogado_1, #foto_abogado_2, #foto_abogado_3{
+    width: 200px;
+    height: 311.5px;
+    
+}
+#alinear-foto{
+    text-align: left;
+}
+.media{
+    display: flex;
+}
+#espacio_3{
+    width: 10px;
+}
+#hr-abogados_1, #hr-abogados_2, #hr-abogados_3 {
+    height: 10px;
+    background-color: orange;
+    width: 46%;
+    margin-left: 0%;
+    margin-right: 50%;
+}
+#hr-footer{
+    background-color: orange;
+    height: 10px;
+}
+#regiones{
+    width: 200px;
+}
+
+@media (max-width: 1024px){
+    #hr-abogados_1, #hr-abogados_2, #hr-abogados_3{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    #logo{
+        display:none;
+    }
+    #parrafo_footer-1, #h5-footer-1{
+        text-align: left;
+    }
+    #parrafo-abogado_1, #parrafo-abogado_2, #parrafo-abogado_alineado_derecha{
+        width: 80%;
+        font-size: 12px;
+    }
+    #parrafo-abogado_alineado_derecha{
+        width: 80%;
+        font-size: 12px;
+        text-align: right;
+        border: 1px;
+    }
+}
+@media (max-width: 480px){
+    h5{
+        display:none;
+    }
+}

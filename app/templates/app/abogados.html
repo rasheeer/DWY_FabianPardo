@@ -1,0 +1,55 @@
+{% extends './base/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+Abogados
+{% endblock %}
+
+{% block content %}
+<div class="principal">
+        <div class="row">
+            <div class="col">
+
+                <!-- LISTADO DE ABOGADOS -->
+                <!-- ABOGADO FOTO A LA IZQUIERDA -->
+                <hr id="hr-abogados_1">
+                <div class="media">
+                    <img class="d-flex mr-3 rounded" id="foto_abogado_1" alt="64x64" src="../static/img/abogado1.png" data-holder-rendered="true">
+                    <div class="media-body">
+                        <h5 class="mt-0" id="h5-abogado1">GONZALO BARCELO LOPEZ</h5>
+                        <p id="parrafo-abogado_1">UNIVERSIDAD DE CHILE<br><br>Especialidades: Bancario<br>Civil<br>Contratos<br>Corporativo<br>Financiamiento<br>Fusiones y Adquisiciones<br>Inmobiliario y construcción<br>
+                                Inscrito el: 12/07/2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <hr id="hr-abogados_2">
+                <div class="media">
+                    <div>
+                        <h5 class="mt-0 mb-1" id="titulo-abogado_alineado_derecha">JONATHAN ARENDT</h5>
+                        <p id="parrafo-abogado_alineado_derecha">UNIVERSIDAD ADOLFO IBAÑEZ<br><br>Especialidades:<br>Corporativo<br>Financiamiento<br>Fusiones y Adquisiciones<br>Inversión extranjera<br> Sociedades<br>
+                                Inscrito el: 29/09/2014</p>
+                    </div>
+                    <div id="espacio_3"><p>       </p></div>
+                    <img class="rounded" id="foto_abogado_2" src="../static/img/abogado2.png" alt="Generic placeholder image">
+                </div>
+            </div>
+        </div>
+        
+        <!-- ABOGADO FOTO A LA IZQUIERDA -->
+        <hr id="hr-abogados_3">
+        <div class="media">
+            <img class="d-flex mr-3 rounded" id="foto_abogado_3" alt="64x64" src="../static/img/abogado3.png" data-holder-rendered="true">
+            <div class="media-body">
+                <h5 class="mt-0" id="h5-abogado-3">ANDREA ALARCON</h5>
+                <p id="parrafo-abogado_2">PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE<br><br>
+                        Especialidades:<br>Corporativo<br>Financiamiento<br>Fusiones y Adquisiciones<br>Inmobiliario y construcción<br>Sociedades<br>
+                        Inscrito el: 10/04/2015</p>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
