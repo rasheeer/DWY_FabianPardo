@@ -18,7 +18,11 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('', include('app.urls')),
+=======
+    # path('', include('app.urls')),
+>>>>>>> 18879680ee988c89fe8d20f05ff3a41587ed9eea
     path('borrar_cliente/<int:rut>', include('app.urls')),
     path('crud', include('app.urls')),
     path('editar/<int:id_cliente>', include('app.urls')),
