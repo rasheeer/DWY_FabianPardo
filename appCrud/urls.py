@@ -19,14 +19,9 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls')),
-    # path('saludo', include('app.urls')),
-    # path('addCarrera', include('app.urls')),
-    # path('agregarCarrera', include('app.urls')),
-
-    # path('editar_carrera/<int:carrera_id>', include('app.urls')),
-    # path('listar_carreras_full', include('app.urls')),
-    # path('borrar_carrera/<int:carrera_id>', include('app.urls')),
-    # path('editar/<int:rut>', include('app.urls')),
+    path('borrar_cliente/<int:rut>', include('app.urls')),
+    path('crud', include('app.urls')),
+    path('editar/<int:id_cliente>', include('app.urls')),
     path('listar', include('app.urls')),
     path('registrocliente', include('app.urls')),
     path('abogados', include('app.urls')),

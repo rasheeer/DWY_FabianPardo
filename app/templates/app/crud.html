@@ -13,10 +13,10 @@
     <ul>
         {% for c in clientes %}
         <li>
-            {{ c.nombre}}, {{ c.semestres}} ${{c.mensualidad}}
-            <a href="/editar_carrera/{{ c.id }}"> Editar</a>
-            <a href="/borrar_carrera/{{ c.id }}"
-            onclick="return confirm('¿Esta seguro de borrar?');"
+            {{c.rut}}, {{ c.nombre}}, {{ c.apellido}}, {{c.edad}}, {{c.email}}, {{c.region}}
+            <a href="/editar_cliente/{{ c.id }}"> Editar</a>
+            <a href="/borrar_cliente/{{ c.id }}"
+            onclick="return confirm('Borrar?');"
             > Borrar</a>
         </li>
         {% endfor %}

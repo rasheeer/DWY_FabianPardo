@@ -6,4 +6,8 @@ class ClienteForm(forms.ModelForm):
         model= Cliente
         fields= ['rut','nombre', 'apellido', 'edad', 'email', 'region']
 
+class ServicioForm(forms.ModelForm):
+    class Meta:
+        model= Servicio
+        fields= ['id_cliente']
 
