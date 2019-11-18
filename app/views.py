@@ -36,19 +36,7 @@ def listar_clientes(request):
     # renderizamos la colección en el template
     return render(request,
         "app/listar.html", {'clientes': clientes})
-        
-# EDITAR CLIENTE
-# def editar_cliente(request, rut):
-#     instancia= Cliente.objects.get(id=rut)
-#     form=  ClienteForm(instance=instancia)
-#     if request.method=="POST":
-#         form= ClienteForm(request.POST, instance=instancia)
-#         if form.is_valid():
-#             instancia= form.save(commit=False)
-#             instancia.save()
-#     return render(request, "app/editar.html",{'form':form})
-
-
+    
 
 def listar_carreras(request):
     # creamos una colección la cual carga TODOS los registos
@@ -58,7 +46,23 @@ def listar_carreras(request):
         "app/listar_carreras.html", {'carreras': carreras})
 
 
+def editar_cliente(request, id_cliente):
+    instancia= Servicio.objects.get(id=id_cliente)
+    form=  ServicioForm(instance=instancia)
+    if request.method=="POST":
+        form= ServicioForm(request.POST, instance=instancia)
+        if form.is_valid():
+            instancia= form.save(commit=False)
+            instancia.save()
+    return render(request, "app/editar.html",{'form':form})
 
+def borrar_cliente(request, rut):
+    instacia= Carrera.objects.get(id=rut)
+    instacia.delete()
+    return redirect('/')
 
-
+def todo_junto(request):
+    clientes = Cliente.objects.all()
+    return render(request,
+        "app/crud.html", {'clientes': clientes})
 
